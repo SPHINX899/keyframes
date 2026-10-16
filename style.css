@@ -1,0 +1,277 @@
+
+
+body{
+    animation: sky 12s infinite;
+    background-color: rgb(26, 26, 31);
+}
+
+
+.stars{
+    width: 100%;
+    height: 70%;
+    animation: stars 12s infinite ;
+}
+
+.star{
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: white;
+    animation: twinkle 1s infinite alternate;
+}
+
+.star:nth-child(1){
+    margin-left: 40px;
+
+}
+
+.star:nth-child(2){
+    margin-left: 120px;
+}
+
+.star:nth-child(3){
+margin-left: 230px;
+    left: 35%;
+}
+
+.star:nth-child(4){
+margin-left: 450px;
+
+    left: 50%;
+}
+
+.star:nth-child(5){
+    margin-left: 150px;
+    left: 60%;
+}
+
+.star:nth-child(6){
+    margin-left: 520px;
+
+    left: 10%;
+}
+
+.star:nth-child(7){
+    margin-left: 620px;
+    left: 70%;
+}
+
+.star:nth-child(8){
+    margin-left: 800px;
+
+    left: 10%;
+}
+
+.star:nth-child(9){
+    margin-left: 900px;
+
+    left: 60%;
+}
+.star:nth-child(10){
+  margin-left: 1201px;
+    left: 10%;
+}
+
+.star:nth-child(11){
+    left: 10%;
+    margin-left: 1300px;
+}
+
+
+.star:nth-child(12){
+    margin-left: 1520px;
+
+    left: 10%;
+}
+
+.star:nth-child(13){
+    margin-left: 1720px;
+
+    left: 10%;
+}
+
+.star:nth-child(14){
+    margin-left: 1920px;
+
+    top: 15%;
+    left: 10%;
+}
+
+.star:nth-child(15){
+    margin-left: 1620px;
+
+    left: 10%;
+}
+
+.star:nth-child(16){
+    margin-left: 2020px;
+    left: 10%;
+}
+
+.star:nth-child(17){
+    margin-left: 750px;
+    left: 10%;
+} 
+
+
+.moon{ position: absolute;
+margin-left: 800px;
+    width: 100px;
+ height: 100px;
+ animation: moon 12s infinite;
+ background: white;
+    border-radius: 50%;
+    box-shadow: 0 0 35px; color: aqua;
+}
+.sun{ 
+    position: absolute;
+margin-left: 700px;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background: orange;
+    box-shadow: 0 0 40px yellow;
+    right: 15%;
+    top: 15px;
+animation: sun 12s infinite;
+}
+
+.cloud{
+    width: 180px;
+    height: 50px;
+    background: wheat;
+    border-radius: 50%;
+    opacity: 0;
+    animation: cloud 12s infinite;
+}
+
+.cloud ::before{
+    width: 70px;
+    height: 70px;
+    background: inherit;
+    border-radius: 50%;
+    left: 30px;
+    bottom: 10px;
+}
+.cloud ::after{
+    width: 90px;
+    height: 90px;
+    background: inherit;
+    border-radius: 50%;
+    right: 20px;
+    bottom: 5px;
+}
+
+.house{
+    top: 300px;
+    position: relative;
+    width: 150px;
+    height: 120px;
+    background: rgb(68, 46, 3);
+    margin-left: 40px;
+}
+.roof{
+    position: absolute;
+   width: 0;
+   height: 0;
+ top: -60px;
+ left: -20px;
+ border-left: 95px solid transparent;
+ border-right: 95px solid transparent;
+ border-bottom: 70px solid rgb(56, 56, 51);
+}
+ .window{
+position: absolute;
+width: 40px;
+height: 45px;
+background: orange;
+top: 25px;
+left: 10px;
+box-shadow: 0 0 30px yellow ;
+ }
+ .door{
+    position: absolute;
+    width: 40px;
+    height: 65px;
+    background: cyan;
+    left: 80px;
+    bottom: -0px;
+ }
+
+ @keyframes sky {
+    0% {
+        background: linear-gradient(rgb(8, 12, 14));
+    }
+    40% {
+        background: linear-gradient(rgb(12, 12, 49));
+    }
+    55% {
+        background: linear-gradient(rgb(53, 100, 165));
+    }
+    100% {
+        background: linear-gradient(rgb(92, 181, 225));
+    }
+ }
+
+ @keyframes stars{
+    0%{opacity: 1;}
+    40%{opacity: 1;}
+    55%{opacity: 0;}
+    100%{opacity: 0;}
+ }
+
+ @keyframes twinkle{
+    from{
+        opacity: 0.3;
+        transform:scale(0.7);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1.4);
+    }
+ }
+
+ @keyframes moon{
+    0%{
+        top: 12%;
+        right: 15%;
+        opacity: 1;
+    }
+    40%{
+        top: 25%;
+        right: 30%;
+        opacity: 1;
+    }
+    55%{
+        top: 45%;
+        right: 45%;
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+ }
+ @keyframes sun{
+    0%{
+       transform: translateY(300px);
+       opacity: 0;
+    }
+    40%{
+    transform: translateY(150px);
+    opacity: 0.5;
+
+    }
+    55%{
+   transform: translateY(0px);
+   opacity: 1;
+    }
+    70%{
+        transform: translateY(-50px);
+     opacity: 1;
+    }
+    100%{
+        transform: translateY(-200px);
+        opacity: 0;
+    }
+ } 
+ 
